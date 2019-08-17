@@ -6,8 +6,9 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
- features = "C:\\Users\\Abha Kumari\\eclipse-workspace\\BDD_framework_SECOND\\src\\main\\java\\features\\autocompleteForm.feature"
- ,glue={"stepDefinitions"}
+ features = "C:\\Users\\Abha Kumari\\eclipse-workspace\\BDD_framework_SECOND\\src\\main\\java\\features\\autocompleteForm.feature",
+  glue={"stepDefinitions"},
+  plugin = {"pretty", "html:test-output"}
  )
 
 public class TestRunner {
