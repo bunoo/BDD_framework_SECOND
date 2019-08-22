@@ -52,6 +52,7 @@ public class AutocompleteFunctValidation {
 	public void user_gets_navigated_to_the_Autocomplete_form_page() {
 	    
 		/* The below piece of code is breaking now. Fix it. Probably it is an issue of synchronization. */
+		
 		WebElement btnZipcode = driver.findElement(By.xpath("//*[@type = 'text' and @class= 'form-control' and @id= 'postal_code' and @placeholder='Zip code']"));
 		boolean b = btnZipcode.isDisplayed();
 		if (b == true) {
